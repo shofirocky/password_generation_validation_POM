@@ -11,6 +11,7 @@ def run_test_case(driver, mode):
     page.set_toggles(mode)
     page.click_generate()
 
+    
     password = page.get_generated_password()
     print(f"Generated Password ({mode}): {password}")
 
@@ -32,5 +33,6 @@ run_test_case(driver, "case2")
 
 print("\n🎉 All test cases executed successfully!")
 driver.quit()
+
 
 
