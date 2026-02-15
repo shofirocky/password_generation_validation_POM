@@ -13,6 +13,7 @@ class PasswordGeneratorPage:
         self.driver = driver
 
     def open(self): 
+        
         self.driver.get("https://genpass.lovable.app/")
         self.driver.maximize_window()
         time.sleep(2)
@@ -70,6 +71,7 @@ class PasswordGeneratorPage:
                 print(f"✅ Case2: Strong password (upper + digit) → {password}")
             else:
                 raise AssertionError(f"❌ Case2: Not working → {password}")
+
 
 
 
