@@ -12,7 +12,7 @@ class PasswordGeneratorPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def open(self): 
+    def open(self):  
         
         self.driver.get("https://genpass.lovable.app/")
         self.driver.maximize_window()
